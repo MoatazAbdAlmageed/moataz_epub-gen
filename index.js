@@ -2,7 +2,7 @@ const axios = require("axios");
 const epub = require("epub-gen");
 
 axios
-  .get("https://www.ida2at.com/shadow-days-passing-short-story/")
+  .get("http://www.gutenberg.org/files/2701/2701-0.txt")
   .then((res) => res.data)
   .then((text) => {
     text = text.slice(text.indexOf("EXTRACTS."));
