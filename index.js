@@ -6,7 +6,7 @@ axios
   .then((res) => res.data)
   .then((text) => {
     text = text.slice(text.indexOf("EXTRACTS."));
-    // text = text.slice(text.indexOf("CHAPTER 1."));
+    text = text.slice(text.indexOf("CHAPTER 1."));
 
     const lines = text.split("\r\n");
     const content = [];
